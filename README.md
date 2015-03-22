@@ -1,0 +1,3 @@
+# autofiller
+autofill input field with matched suggestion in a dropdown ... similar to bootstrap typeahead.../n
+<a href="http://bhavansharma.co.nf/autofiller">click here</a> to check the demo. currently it accepts json data in as option for the data... workinng on implementing a ajax way of getting the dataa.... currently data is key value pair where key is visible to user, but data can be selected with that key.... exaple.. .val() returns the  key seelected. to get corresponding value $("inputselector").autofiller('getVal') will return the corresponding value assosiated to the key selected... Demo shows the case of names and emails... user selects the name using autofiller  and can get email of correspondfing selected name....
