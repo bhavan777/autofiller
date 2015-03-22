@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="autofiller-dev.js"></script>
+<link rel="stylesheet" type="text/css" href="autofiller.css">
+<style type="text/css">
+body{
+	padding: 30%;
+}
+</style>
+</head>
+<body>
+<input type="text" id="myInput"/>
+<button id="getValue">Get associated email</button>
+<script type="text/javascript">
+	
+		$(document).ready(function(){
+			var sample={
+				"bhavan":"bhavan@oyorooms.com",
+				"rohit":"rohit@xyz.com",
+				"bansal":"bansal@nepal.com",
+				"bhavaasdadn":"bhaasdvan@oyorooms.com",
+				"rohisdfsft":"rohit@xyz.com",
+				"banssdfsdffal":"bansal@nepal.com",
+				"bhavqwean":"bhavan@oyoasfrooms.com",
+				"rohiwerewt":"rohit@asfxyz.com",
+				"bansalasdsfaf":"asfsbansal@nepal.com"
+			}
+			$("#myInput").autofiller({data:sample});
+			$("#getValue").click(function(){
+				alert($("#myInput").autofiller("getVal"));
+			});
+
+		});
+
+</script>
+
+</body>
+</html>
